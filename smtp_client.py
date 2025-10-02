@@ -1,6 +1,6 @@
 import socket
 
-def smtp_client(host= 192.168.1.34, port=2525):
+def smtp_client(host= 127.0.0.1, port=2525):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect((host, port))
 
@@ -24,3 +24,4 @@ def smtp_client(host= 192.168.1.34, port=2525):
 
 if __name__ == "__main__":
     smtp_client()
+
